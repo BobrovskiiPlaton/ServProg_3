@@ -1,0 +1,32 @@
+﻿@page
+@model ErrorModel
+@{
+    ViewData["Title"] = "Страница не найдена";
+    var statusCode = HttpContext.Response.StatusCode;
+}
+
+<div class="error-page">
+    <div class="container">
+        <div class="error-content">
+            @if (statusCode == 404)
+            {
+                <div class="error-code">404</div>
+                <h1>Страница не найдена</h1>
+                <p>Лох, такой страницы нет. Съебалось чудище.</p>
+                <div class="error-actions">
+                    <a href="/" class="btn btn-primary">Вернуться на главную</a>
+                    <a href="/Contact" class="btn btn-outline">Связаться с поддержкой</a>
+                </div>
+            }
+            else
+            {
+                <div class="error-code">@statusCode</div>
+                <h1>Произошла ошибка</h1>
+                <p>Извините, вы сломали сайт вашим запросом. Как вам не стыдно?</p>
+                <div class="error-actions">
+                    <a href="/" class="btn btn-primary">Вернуться на главную</a>
+                </div>
+            }
+        </div>
+    </div>
+</div>

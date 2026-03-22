@@ -1,0 +1,83 @@
+@page
+@model ContactModel
+@{
+    ViewData["Title"] = "Контакты";
+}
+
+<div class="page-header">
+    <div class="container">
+        <h1>Свяжитесь с нами</h1>
+        <p>Мы всегда рады помочь вам</p>
+    </div>
+</div>
+
+<div class="contact-content">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="info-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Адрес</h3>
+                    <p>г. Ад, улица Чортовская 666</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Телефон</h3>
+                    <p>8 (800) 555-35-35</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>]ъуъ@notgmail.com</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Режим работы</h3>
+                    <p>Микс 30</p>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h2>Отправить сообщение</h2>
+                <form method="post">
+                    <div class="form-group">
+                        <label asp-for="ContactMessage.Name">Имя</label>
+                        <input asp-for="ContactMessage.Name" class="form-control" required />
+                        <span asp-validation-for="ContactMessage.Name"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label asp-for="ContactMessage.Email">Email</label>
+                        <input asp-for="ContactMessage.Email" type="email" class="form-control" required />
+                        <span asp-validation-for="ContactMessage.Email"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label asp-for="ContactMessage.Subject">Тема</label>
+                        <input asp-for="ContactMessage.Subject" class="form-control" required />
+                        <span asp-validation-for="ContactMessage.Subject"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label asp-for="ContactMessage.Message">Сообщение</label>
+                        <textarea asp-for="ContactMessage.Message" rows="5" class="form-control" required></textarea>
+                        <span asp-validation-for="ContactMessage.Message"></span>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Отправить</button>
+                </form>
+                
+                @if (Model.ShowSuccessMessage)
+                {
+                    <div class="alert alert-success">
+                        Спасибо! Ваше сообщение отправлено.
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="Shared/_ValidationScriptsPartial" />
+}

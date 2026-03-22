@@ -1,0 +1,154 @@
+2026-03-22 22:23:39.102 +03:00 [INF] User profile is available. Using 'C:\Users\Platon\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-03-22 22:23:39.221 +03:00 [INF] Now listening on: http://localhost:5098
+2026-03-22 22:23:39.224 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-22 22:23:39.225 +03:00 [INF] Hosting environment: Development
+2026-03-22 22:23:39.226 +03:00 [INF] Content root path: D:\ComputerGraphics6\i_hate_this\RazorLandingSite
+2026-03-22 22:23:43.011 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5098/ - null null
+2026-03-22 22:23:43.023 +03:00 [INF] Incoming request: GET / | IP: ::1 | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36
+2026-03-22 22:23:43.036 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-03-22 22:23:43.048 +03:00 [INF] Executing endpoint '/Index'
+2026-03-22 22:23:43.076 +03:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2026-03-22 22:23:43.084 +03:00 [INF] Executing handler method RazorLandingSite.Pages.IndexModel.OnGet - ModelState is "Valid"
+2026-03-22 22:23:43.087 +03:00 [INF] Index page accessed at "2026-03-22T19:23:43.0875044Z"
+2026-03-22 22:23:43.090 +03:00 [INF] Executed handler method OnGet, returned result .
+2026-03-22 22:23:43.093 +03:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2026-03-22 22:23:43.095 +03:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2026-03-22 22:23:43.161 +03:00 [INF] Executed page /Index in 80.2066ms
+2026-03-22 22:23:43.165 +03:00 [INF] Executed endpoint '/Index'
+2026-03-22 22:23:43.166 +03:00 [INF] Outgoing response: GET / | StatusCode: 200 | Duration: 143ms
+2026-03-22 22:23:43.171 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5098/ - 200 null text/html; charset=utf-8 161.5301ms
+2026-03-22 22:23:43.185 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5098/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-03-22 22:23:43.185 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5098/lib/jquery/dist/jquery.min.js - null null
+2026-03-22 22:23:43.185 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5098/RazorLandingSite.styles.css?v=kW-j9TbzIig3A2IWEnQqY1qebi9PQmCaVkajtT0W8J4 - null null
+2026-03-22 22:23:43.185 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5098/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - null null
+2026-03-22 22:23:43.185 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5098/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2026-03-22 22:23:43.185 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5098/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-03-22 22:23:43.188 +03:00 [INF] Incoming request: GET /lib/bootstrap/dist/css/bootstrap.min.css | IP: ::1 | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36
+2026-03-22 22:23:43.191 +03:00 [INF] Incoming request: GET /lib/jquery/dist/jquery.min.js | IP: ::1 | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36
+2026-03-22 22:23:43.193 +03:00 [INF] Incoming request: GET /RazorLandingSite.styles.css | IP: ::1 | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36
+2026-03-22 22:23:43.195 +03:00 [INF] Incoming request: GET /css/site.css | IP: ::1 | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36
+2026-03-22 22:23:43.198 +03:00 [INF] Incoming request: GET /js/site.js | IP: ::1 | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36
+2026-03-22 22:23:43.200 +03:00 [INF] Incoming request: GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js | IP: ::1 | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36
+2026-03-22 22:23:43.206 +03:00 [INF] The file /lib/bootstrap/dist/css/bootstrap.min.css was not modified
+2026-03-22 22:23:43.206 +03:00 [INF] The file /lib/jquery/dist/jquery.min.js was not modified
+2026-03-22 22:23:43.208 +03:00 [INF] The file /css/site.css was not modified
+2026-03-22 22:23:43.210 +03:00 [INF] The file /js/site.js was not modified
+2026-03-22 22:23:43.210 +03:00 [INF] Sending file. Request path: '/RazorLandingSite.styles.css'. Physical path: 'D:\ComputerGraphics6\i_hate_this\RazorLandingSite\obj\Debug\net8.0\scopedcss\bundle\RazorLandingSite.styles.css'
+2026-03-22 22:23:43.212 +03:00 [INF] The file /lib/bootstrap/dist/js/bootstrap.bundle.min.js was not modified
+2026-03-22 22:23:43.213 +03:00 [INF] Outgoing response: GET /lib/bootstrap/dist/css/bootstrap.min.css | StatusCode: 304 | Duration: 25ms
+2026-03-22 22:23:43.214 +03:00 [INF] Outgoing response: GET /lib/jquery/dist/jquery.min.js | StatusCode: 304 | Duration: 23ms
+2026-03-22 22:23:43.216 +03:00 [INF] Outgoing response: GET /css/site.css | StatusCode: 304 | Duration: 20ms
+2026-03-22 22:23:43.217 +03:00 [INF] Outgoing response: GET /js/site.js | StatusCode: 304 | Duration: 18ms
+2026-03-22 22:23:43.219 +03:00 [INF] Outgoing response: GET /RazorLandingSite.styles.css | StatusCode: 200 | Duration: 25ms
+2026-03-22 22:23:43.220 +03:00 [INF] Outgoing response: GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js | StatusCode: 304 | Duration: 19ms
+2026-03-22 22:23:43.222 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5098/lib/bootstrap/dist/css/bootstrap.min.css - 304 null text/css 37.6523ms
+2026-03-22 22:23:43.224 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5098/lib/jquery/dist/jquery.min.js - 304 null text/javascript 39.0086ms
+2026-03-22 22:23:43.226 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5098/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - 304 null text/css 41.5514ms
+2026-03-22 22:23:43.228 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5098/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 304 null text/javascript 43.1726ms
+2026-03-22 22:23:43.229 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5098/RazorLandingSite.styles.css?v=kW-j9TbzIig3A2IWEnQqY1qebi9PQmCaVkajtT0W8J4 - 200 1134 text/css 45.0004ms
+2026-03-22 22:23:43.232 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5098/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 304 null text/javascript 47.2035ms
+2026-03-22 22:23:44.403 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5098/About - null null
+2026-03-22 22:23:44.406 +03:00 [INF] Incoming request: GET /About | IP: ::1 | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36
+2026-03-22 22:23:44.409 +03:00 [INF] Executing endpoint '/About'
+2026-03-22 22:23:44.413 +03:00 [INF] Route matched with {page = "/About"}. Executing page /About
+2026-03-22 22:23:44.415 +03:00 [INF] Executing handler method RazorLandingSite.Pages.AboutModel.OnGet - ModelState is "Valid"
+2026-03-22 22:23:44.416 +03:00 [INF] Executed handler method OnGet, returned result .
+2026-03-22 22:23:44.417 +03:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2026-03-22 22:23:44.418 +03:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2026-03-22 22:23:44.425 +03:00 [INF] Executed page /About in 10.3309ms
+2026-03-22 22:23:44.427 +03:00 [INF] Executed endpoint '/About'
+2026-03-22 22:23:44.428 +03:00 [INF] Outgoing response: GET /About | StatusCode: 200 | Duration: 22ms
+2026-03-22 22:23:44.430 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5098/About - 200 null text/html; charset=utf-8 27.0032ms
+2026-03-22 22:23:44.447 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5098/RazorLandingSite.styles.css?v=kW-j9TbzIig3A2IWEnQqY1qebi9PQmCaVkajtT0W8J4 - null null
+2026-03-22 22:23:44.450 +03:00 [INF] Incoming request: GET /RazorLandingSite.styles.css | IP: ::1 | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36
+2026-03-22 22:23:44.452 +03:00 [INF] The file /RazorLandingSite.styles.css was not modified
+2026-03-22 22:23:44.453 +03:00 [INF] Outgoing response: GET /RazorLandingSite.styles.css | StatusCode: 304 | Duration: 3ms
+2026-03-22 22:23:44.455 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5098/RazorLandingSite.styles.css?v=kW-j9TbzIig3A2IWEnQqY1qebi9PQmCaVkajtT0W8J4 - 304 null text/css 8.1872ms
+2026-03-22 22:23:47.244 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5098/Contact - null null
+2026-03-22 22:23:47.246 +03:00 [INF] Incoming request: GET /Contact | IP: ::1 | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36
+2026-03-22 22:23:47.249 +03:00 [INF] Executing endpoint '/Contact'
+2026-03-22 22:23:47.261 +03:00 [INF] Route matched with {page = "/Contact"}. Executing page /Contact
+2026-03-22 22:23:47.266 +03:00 [INF] Executing handler method RazorLandingSite.Pages.ContactModel.OnGet - ModelState is "Valid"
+2026-03-22 22:23:47.267 +03:00 [INF] Executed handler method OnGet, returned result .
+2026-03-22 22:23:47.269 +03:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2026-03-22 22:23:47.270 +03:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2026-03-22 22:23:47.306 +03:00 [INF] Executed page /Contact in 43.6091ms
+2026-03-22 22:23:47.307 +03:00 [INF] Executed endpoint '/Contact'
+2026-03-22 22:23:47.308 +03:00 [INF] Outgoing response: GET /Contact | StatusCode: 200 | Duration: 61ms
+2026-03-22 22:23:47.310 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5098/Contact - 200 null text/html; charset=utf-8 66.317ms
+2026-03-22 22:23:47.327 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5098/RazorLandingSite.styles.css?v=kW-j9TbzIig3A2IWEnQqY1qebi9PQmCaVkajtT0W8J4 - null null
+2026-03-22 22:23:47.327 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5098/lib/jquery-validation/dist/jquery.validate.min.js - null null
+2026-03-22 22:23:47.327 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5098/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - null null
+2026-03-22 22:23:47.329 +03:00 [INF] Incoming request: GET /RazorLandingSite.styles.css | IP: ::1 | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36
+2026-03-22 22:23:47.332 +03:00 [INF] Incoming request: GET /lib/jquery-validation/dist/jquery.validate.min.js | IP: ::1 | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36
+2026-03-22 22:23:47.335 +03:00 [INF] Incoming request: GET /lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js | IP: ::1 | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36
+2026-03-22 22:23:47.336 +03:00 [INF] The file /RazorLandingSite.styles.css was not modified
+2026-03-22 22:23:47.338 +03:00 [INF] The file /lib/jquery-validation/dist/jquery.validate.min.js was not modified
+2026-03-22 22:23:47.340 +03:00 [INF] The file /lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js was not modified
+2026-03-22 22:23:47.341 +03:00 [INF] Outgoing response: GET /RazorLandingSite.styles.css | StatusCode: 304 | Duration: 11ms
+2026-03-22 22:23:47.342 +03:00 [INF] Outgoing response: GET /lib/jquery-validation/dist/jquery.validate.min.js | StatusCode: 304 | Duration: 9ms
+2026-03-22 22:23:47.343 +03:00 [INF] Outgoing response: GET /lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js | StatusCode: 304 | Duration: 8ms
+2026-03-22 22:23:47.344 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5098/RazorLandingSite.styles.css?v=kW-j9TbzIig3A2IWEnQqY1qebi9PQmCaVkajtT0W8J4 - 304 null text/css 17.5901ms
+2026-03-22 22:23:47.346 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5098/lib/jquery-validation/dist/jquery.validate.min.js - 304 null text/javascript 18.7963ms
+2026-03-22 22:23:47.348 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5098/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js - 304 null text/javascript 20.451ms
+2026-03-22 22:23:51.292 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5098/Contact - null null
+2026-03-22 22:23:51.294 +03:00 [INF] Incoming request: GET /Contact | IP: ::1 | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36
+2026-03-22 22:23:51.296 +03:00 [INF] Executing endpoint '/Contact'
+2026-03-22 22:23:51.297 +03:00 [INF] Route matched with {page = "/Contact"}. Executing page /Contact
+2026-03-22 22:23:51.299 +03:00 [INF] Executing handler method RazorLandingSite.Pages.ContactModel.OnGet - ModelState is "Valid"
+2026-03-22 22:23:51.300 +03:00 [INF] Executed handler method OnGet, returned result .
+2026-03-22 22:23:51.302 +03:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2026-03-22 22:23:51.303 +03:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2026-03-22 22:23:51.307 +03:00 [INF] Executed page /Contact in 8.1907ms
+2026-03-22 22:23:51.309 +03:00 [INF] Executed endpoint '/Contact'
+2026-03-22 22:23:51.310 +03:00 [INF] Outgoing response: GET /Contact | StatusCode: 200 | Duration: 15ms
+2026-03-22 22:23:51.312 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5098/Contact - 200 null text/html; charset=utf-8 19.8358ms
+2026-03-22 22:23:51.330 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5098/RazorLandingSite.styles.css?v=kW-j9TbzIig3A2IWEnQqY1qebi9PQmCaVkajtT0W8J4 - null null
+2026-03-22 22:23:51.332 +03:00 [INF] Incoming request: GET /RazorLandingSite.styles.css | IP: ::1 | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36
+2026-03-22 22:23:51.335 +03:00 [INF] The file /RazorLandingSite.styles.css was not modified
+2026-03-22 22:23:51.336 +03:00 [INF] Outgoing response: GET /RazorLandingSite.styles.css | StatusCode: 304 | Duration: 3ms
+2026-03-22 22:23:51.338 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5098/RazorLandingSite.styles.css?v=kW-j9TbzIig3A2IWEnQqY1qebi9PQmCaVkajtT0W8J4 - 304 null text/css 7.8209ms
+2026-03-22 22:23:55.262 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5098/Privacy - null null
+2026-03-22 22:23:55.264 +03:00 [INF] Incoming request: GET /Privacy | IP: ::1 | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36
+2026-03-22 22:23:55.266 +03:00 [INF] Executing endpoint '/Privacy'
+2026-03-22 22:23:55.269 +03:00 [INF] Route matched with {page = "/Privacy"}. Executing page /Privacy
+2026-03-22 22:23:55.271 +03:00 [INF] Executing handler method RazorLandingSite.Pages.PrivacyModel.OnGet - ModelState is "Valid"
+2026-03-22 22:23:55.272 +03:00 [INF] Executed handler method OnGet, returned result .
+2026-03-22 22:23:55.273 +03:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2026-03-22 22:23:55.274 +03:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2026-03-22 22:23:55.279 +03:00 [INF] Executed page /Privacy in 8.1362ms
+2026-03-22 22:23:55.280 +03:00 [INF] Executed endpoint '/Privacy'
+2026-03-22 22:23:55.281 +03:00 [INF] Outgoing response: GET /Privacy | StatusCode: 200 | Duration: 17ms
+2026-03-22 22:23:55.283 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5098/Privacy - 200 null text/html; charset=utf-8 21.2428ms
+2026-03-22 22:23:55.305 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5098/RazorLandingSite.styles.css?v=kW-j9TbzIig3A2IWEnQqY1qebi9PQmCaVkajtT0W8J4 - null null
+2026-03-22 22:23:55.307 +03:00 [INF] Incoming request: GET /RazorLandingSite.styles.css | IP: ::1 | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36
+2026-03-22 22:23:55.310 +03:00 [INF] The file /RazorLandingSite.styles.css was not modified
+2026-03-22 22:23:55.311 +03:00 [INF] Outgoing response: GET /RazorLandingSite.styles.css | StatusCode: 304 | Duration: 3ms
+2026-03-22 22:23:55.313 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5098/RazorLandingSite.styles.css?v=kW-j9TbzIig3A2IWEnQqY1qebi9PQmCaVkajtT0W8J4 - 304 null text/css 7.359ms
+2026-03-22 22:23:55.710 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5098/ - null null
+2026-03-22 22:23:55.712 +03:00 [INF] Incoming request: GET / | IP: ::1 | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36
+2026-03-22 22:23:55.714 +03:00 [INF] Executing endpoint '/Index'
+2026-03-22 22:23:55.715 +03:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2026-03-22 22:23:55.716 +03:00 [INF] Executing handler method RazorLandingSite.Pages.IndexModel.OnGet - ModelState is "Valid"
+2026-03-22 22:23:55.718 +03:00 [INF] Index page accessed at "2026-03-22T19:23:55.7180181Z"
+2026-03-22 22:23:55.718 +03:00 [INF] Executed handler method OnGet, returned result .
+2026-03-22 22:23:55.720 +03:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2026-03-22 22:23:55.720 +03:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2026-03-22 22:23:55.723 +03:00 [INF] Executed page /Index in 6.3135ms
+2026-03-22 22:23:55.724 +03:00 [INF] Executed endpoint '/Index'
+2026-03-22 22:23:55.725 +03:00 [INF] Outgoing response: GET / | StatusCode: 200 | Duration: 12ms
+2026-03-22 22:23:55.727 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5098/ - 200 null text/html; charset=utf-8 16.7293ms
+2026-03-22 22:23:56.156 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5098/ - null null
+2026-03-22 22:23:56.158 +03:00 [INF] Incoming request: GET / | IP: ::1 | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 YaBrowser/25.12.0.0 Safari/537.36
+2026-03-22 22:23:56.160 +03:00 [INF] Executing endpoint '/Index'
+2026-03-22 22:23:56.161 +03:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2026-03-22 22:23:56.163 +03:00 [INF] Executing handler method RazorLandingSite.Pages.IndexModel.OnGet - ModelState is "Valid"
+2026-03-22 22:23:56.164 +03:00 [INF] Index page accessed at "2026-03-22T19:23:56.1645194Z"
+2026-03-22 22:23:56.165 +03:00 [INF] Executed handler method OnGet, returned result .
+2026-03-22 22:23:56.166 +03:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2026-03-22 22:23:56.167 +03:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2026-03-22 22:23:56.169 +03:00 [INF] Executed page /Index in 6.8752ms
+2026-03-22 22:23:56.171 +03:00 [INF] Executed endpoint '/Index'
+2026-03-22 22:23:56.172 +03:00 [INF] Outgoing response: GET / | StatusCode: 200 | Duration: 13ms
+2026-03-22 22:23:56.174 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5098/ - 200 null text/html; charset=utf-8 18.0626ms
+2026-03-22 22:24:28.023 +03:00 [INF] Application is shutting down...

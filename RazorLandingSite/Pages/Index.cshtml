@@ -1,0 +1,76 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Главная";
+}
+
+<div class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title">Добро пожаловать в <span class="highlight">АД</span></h1>
+            <p class="hero-subtitle">Я хз что писать</p>
+            <div class="hero-buttons">
+                <a href="/About" class="btn btn-primary">Узнать больше</a>
+                <a href="/Contact" class="btn btn-outline">Связаться</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="features">
+    <div class="container">
+        <h2 class="section-title">Почему вы здесь?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3>Надо проверить лабу</h3>
+                <p>Или можно просто поверить на слово</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Скука</h3>
+                <p>Зато мне капец весело это делать</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="cta-section">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Готовы начать проект?</h2>
+            <p>Свяжитесь с нами прямо сейчас и получите консультацию</p>
+            <a href="/Contact" class="btn btn-primary btn-large">Начать сейчас</a>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Анимация появления элементов
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -50px 0px"
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = "1";
+                    entry.target.style.transform = "translateY(0)";
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.feature-card').forEach(card => {
+            card.style.opacity = "0";
+            card.style.transform = "translateY(30px)";
+            card.style.transition = "all 0.6s ease-out";
+            observer.observe(card);
+        });
+    </script>
+}
