@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace Greenswamp.Pages;
 
-public class AboutModel : PageModel
+public class TosModel : PageModel
 {
     public void OnGet()
     {

@@ -1341,26 +1341,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Platon\\.nuget\\packages\\": {}
+    "C:\\Users\\KreKer\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ComputerGraphics6\\i_hate_this\\RazorLandingSite\\RazorLandingSite.csproj",
+      "projectUniqueName": "C:\\Users\\KreKer\\ServProg_3\\RazorLandingSite\\RazorLandingSite.csproj",
       "projectName": "RazorLandingSite",
-      "projectPath": "D:\\ComputerGraphics6\\i_hate_this\\RazorLandingSite\\RazorLandingSite.csproj",
-      "packagesPath": "C:\\Users\\Platon\\.nuget\\packages\\",
-      "outputPath": "D:\\ComputerGraphics6\\i_hate_this\\RazorLandingSite\\obj\\",
+      "projectPath": "C:\\Users\\KreKer\\ServProg_3\\RazorLandingSite\\RazorLandingSite.csproj",
+      "packagesPath": "C:\\Users\\KreKer\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\KreKer\\ServProg_3\\RazorLandingSite\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Platon\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\KreKer\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1416,7 +1414,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.419/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

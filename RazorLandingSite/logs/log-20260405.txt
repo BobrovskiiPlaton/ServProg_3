@@ -1,0 +1,54 @@
+2026-04-05 12:09:37.647 +03:00 [INF] User profile is available. Using 'C:\Users\KreKer\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-05 12:09:37.825 +03:00 [INF] Now listening on: http://localhost:5098
+2026-04-05 12:09:37.829 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-05 12:09:37.830 +03:00 [INF] Hosting environment: Development
+2026-04-05 12:09:37.831 +03:00 [INF] Content root path: C:\Users\KreKer\ServProg_3\RazorLandingSite
+2026-04-05 12:09:39.065 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5098/ - null null
+2026-04-05 12:09:39.078 +03:00 [INF] Incoming request: GET / | IP: 127.0.0.1 | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0
+2026-04-05 12:09:39.087 +03:00 [WRN] Failed to determine the https port for redirect.
+2026-04-05 12:09:39.101 +03:00 [INF] Executing endpoint '/Index'
+2026-04-05 12:09:39.136 +03:00 [INF] Route matched with {page = "/Index"}. Executing page /Index
+2026-04-05 12:09:39.146 +03:00 [INF] Executing handler method RazorLandingSite.Pages.IndexModel.OnGet - ModelState is "Valid"
+2026-04-05 12:09:39.149 +03:00 [INF] Index page accessed at "2026-04-05T09:09:39.1494281Z"
+2026-04-05 12:09:39.153 +03:00 [INF] Executed handler method OnGet, returned result .
+2026-04-05 12:09:39.157 +03:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2026-04-05 12:09:39.159 +03:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2026-04-05 12:09:39.279 +03:00 [INF] Executed page /Index in 137.1359ms
+2026-04-05 12:09:39.283 +03:00 [INF] Executed endpoint '/Index'
+2026-04-05 12:09:39.285 +03:00 [INF] Outgoing response: GET / | StatusCode: 200 | Duration: 207ms
+2026-04-05 12:09:39.291 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5098/ - 200 null text/html; charset=utf-8 228.338ms
+2026-04-05 12:09:39.299 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5098/lib/bootstrap/dist/css/bootstrap.min.css - null null
+2026-04-05 12:09:39.299 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5098/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - null null
+2026-04-05 12:09:39.299 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5098/RazorLandingSite.styles.css?v=kW-j9TbzIig3A2IWEnQqY1qebi9PQmCaVkajtT0W8J4 - null null
+2026-04-05 12:09:39.300 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5098/lib/jquery/dist/jquery.min.js - null null
+2026-04-05 12:09:39.300 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5098/lib/bootstrap/dist/js/bootstrap.bundle.min.js - null null
+2026-04-05 12:09:39.301 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5098/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - null null
+2026-04-05 12:09:39.303 +03:00 [INF] Incoming request: GET /lib/bootstrap/dist/css/bootstrap.min.css | IP: 127.0.0.1 | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0
+2026-04-05 12:09:39.306 +03:00 [INF] Incoming request: GET /css/site.css | IP: 127.0.0.1 | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0
+2026-04-05 12:09:39.308 +03:00 [INF] Incoming request: GET /RazorLandingSite.styles.css | IP: 127.0.0.1 | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0
+2026-04-05 12:09:39.311 +03:00 [INF] Incoming request: GET /lib/jquery/dist/jquery.min.js | IP: 127.0.0.1 | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0
+2026-04-05 12:09:39.314 +03:00 [INF] Incoming request: GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js | IP: 127.0.0.1 | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0
+2026-04-05 12:09:39.318 +03:00 [INF] Incoming request: GET /js/site.js | IP: 127.0.0.1 | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0
+2026-04-05 12:09:39.327 +03:00 [INF] Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\KreKer\ServProg_3\RazorLandingSite\wwwroot\css\site.css'
+2026-04-05 12:09:39.327 +03:00 [INF] Sending file. Request path: '/RazorLandingSite.styles.css'. Physical path: 'C:\Users\KreKer\ServProg_3\RazorLandingSite\obj\Debug\net8.0\scopedcss\bundle\RazorLandingSite.styles.css'
+2026-04-05 12:09:39.333 +03:00 [INF] Outgoing response: GET /css/site.css | StatusCode: 200 | Duration: 27ms
+2026-04-05 12:09:39.336 +03:00 [INF] Outgoing response: GET /RazorLandingSite.styles.css | StatusCode: 200 | Duration: 27ms
+2026-04-05 12:09:39.337 +03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.min.css'. Physical path: 'C:\Users\KreKer\ServProg_3\RazorLandingSite\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css'
+2026-04-05 12:09:39.337 +03:00 [INF] Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\KreKer\ServProg_3\RazorLandingSite\wwwroot\js\site.js'
+2026-04-05 12:09:39.339 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5098/css/site.css?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0 - 200 362 text/css 39.9732ms
+2026-04-05 12:09:39.341 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5098/RazorLandingSite.styles.css?v=kW-j9TbzIig3A2IWEnQqY1qebi9PQmCaVkajtT0W8J4 - 200 1134 text/css 41.483ms
+2026-04-05 12:09:39.343 +03:00 [INF] Outgoing response: GET /lib/bootstrap/dist/css/bootstrap.min.css | StatusCode: 200 | Duration: 40ms
+2026-04-05 12:09:39.345 +03:00 [INF] Outgoing response: GET /js/site.js | StatusCode: 200 | Duration: 26ms
+2026-04-05 12:09:39.354 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5098/lib/bootstrap/dist/css/bootstrap.min.css - 200 162726 text/css 56.3243ms
+2026-04-05 12:09:39.356 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5098/js/site.js?v=hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo - 200 231 text/javascript 54.9815ms
+2026-04-05 12:09:39.371 +03:00 [INF] Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.bundle.min.js'. Physical path: 'C:\Users\KreKer\ServProg_3\RazorLandingSite\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js'
+2026-04-05 12:09:39.373 +03:00 [INF] Outgoing response: GET /lib/bootstrap/dist/js/bootstrap.bundle.min.js | StatusCode: 200 | Duration: 58ms
+2026-04-05 12:09:39.375 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5098/lib/bootstrap/dist/js/bootstrap.bundle.min.js - 200 78474 text/javascript 74.8143ms
+2026-04-05 12:09:39.428 +03:00 [INF] Sending file. Request path: '/lib/jquery/dist/jquery.min.js'. Physical path: 'C:\Users\KreKer\ServProg_3\RazorLandingSite\wwwroot\lib\jquery\dist\jquery.min.js'
+2026-04-05 12:09:39.430 +03:00 [INF] Outgoing response: GET /lib/jquery/dist/jquery.min.js | StatusCode: 200 | Duration: 118ms
+2026-04-05 12:09:39.432 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5098/lib/jquery/dist/jquery.min.js - 200 89503 text/javascript 132.1844ms
+2026-04-05 12:09:39.446 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5098/favicon.ico - null null
+2026-04-05 12:09:39.449 +03:00 [INF] Incoming request: GET /favicon.ico | IP: 127.0.0.1 | UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0) Gecko/20100101 Firefox/149.0
+2026-04-05 12:09:39.460 +03:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\KreKer\ServProg_3\RazorLandingSite\wwwroot\favicon.ico'
+2026-04-05 12:09:39.461 +03:00 [INF] Outgoing response: GET /favicon.ico | StatusCode: 200 | Duration: 12ms
+2026-04-05 12:09:39.464 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5098/favicon.ico - 200 5430 image/x-icon 17.6488ms

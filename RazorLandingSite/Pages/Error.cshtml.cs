@@ -1,27 +1,23 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using System.Diagnostics;
 
-namespace RazorLandingSite.Pages
+namespace Greenswamp.Pages;
+
+public class ErrorModel : PageModel
 {
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    [IgnoreAntiforgeryToken]
-    public class ErrorModel : PageModel
+    private readonly ILogger<ErrorModel> _logger;
+
+    public ErrorModel(ILogger<ErrorModel> logger)
     {
-        public string? RequestId { get; set; }
-        public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
+        _logger = logger;
+    }
 
-        private readonly ILogger<ErrorModel> _logger;
-
-        public ErrorModel(ILogger<ErrorModel> logger)
-        {
-            _logger = logger;
-        }
-
-        public void OnGet()
-        {
-            RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier;
-            _logger.LogError($"Error page accessed. Status Code: {HttpContext.Response.StatusCode}, RequestId: {RequestId}");
-        }
+    public void OnGet(int? code = null)
+    {
+        var statusCode = code ?? 404;
+        _logger.LogWarning("Страница не найдена: {Path}, Status Code: {StatusCode}", 
+            Request.Path, statusCode);
+        
+        Response.StatusCode = statusCode;
     }
 }

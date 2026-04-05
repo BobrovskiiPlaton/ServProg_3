@@ -1,83 +1,83 @@
 @page
-@model ContactModel
+@model Greenswamp.Pages.ContactModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @{
-    ViewData["Title"] = "Контакты";
+    ViewData["Title"] = "Greenswamp - Contact";
 }
 
-<div class="page-header">
-    <div class="container">
-        <h1>Свяжитесь с нами</h1>
-        <p>Мы всегда рады помочь вам</p>
-    </div>
-</div>
-
-<div class="contact-content">
-    <div class="container">
-        <div class="contact-grid">
-            <div class="contact-info">
-                <div class="info-card">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <h3>Адрес</h3>
-                    <p>г. Ад, улица Чортовская 666</p>
-                </div>
-                <div class="info-card">
-                    <i class="fas fa-phone"></i>
-                    <h3>Телефон</h3>
-                    <p>8 (800) 555-35-35</p>
-                </div>
-                <div class="info-card">
-                    <i class="fas fa-envelope"></i>
-                    <h3>Email</h3>
-                    <p>]ъуъ@notgmail.com</p>
-                </div>
-                <div class="info-card">
-                    <i class="fas fa-clock"></i>
-                    <h3>Режим работы</h3>
-                    <p>Микс 30</p>
-                </div>
-            </div>
-            
-            <div class="contact-form">
-                <h2>Отправить сообщение</h2>
-                <form method="post">
-                    <div class="form-group">
-                        <label asp-for="ContactMessage.Name">Имя</label>
-                        <input asp-for="ContactMessage.Name" class="form-control" required />
-                        <span asp-validation-for="ContactMessage.Name"></span>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label asp-for="ContactMessage.Email">Email</label>
-                        <input asp-for="ContactMessage.Email" type="email" class="form-control" required />
-                        <span asp-validation-for="ContactMessage.Email"></span>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label asp-for="ContactMessage.Subject">Тема</label>
-                        <input asp-for="ContactMessage.Subject" class="form-control" required />
-                        <span asp-validation-for="ContactMessage.Subject"></span>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label asp-for="ContactMessage.Message">Сообщение</label>
-                        <textarea asp-for="ContactMessage.Message" rows="5" class="form-control" required></textarea>
-                        <span asp-validation-for="ContactMessage.Message"></span>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-primary">Отправить</button>
-                </form>
-                
-                @if (Model.ShowSuccessMessage)
-                {
-                    <div class="alert alert-success">
-                        Спасибо! Ваше сообщение отправлено.
-                    </div>
-                }
-            </div>
+<div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="bg-white rounded-xl shadow-sm p-8">
+        <div class="text-center mb-8">
+            <h2 class="text-3xl font-bold text-swamp-900 mb-2">
+                Swamp Mail
+            </h2>
+            <p class="text-swamp-700">Отправьте сообщение, и оно сразу допрыгает до нашей команды</p>
         </div>
+
+        @if (TempData["Success"] != null)
+        {
+            <div class="mb-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg text-center">
+                <p class="font-semibold">🐸 Сообщение отправлено!</p>
+                <p class="text-sm mt-1">Мы ответим вам в течение 24-48 часов.</p>
+            </div>
+        }
+
+        <form method="post" class="space-y-6">
+            <div asp-validation-summary="ModelOnly" class="text-red-600 bg-red-50 p-3 rounded-lg"></div>
+            
+            <div>
+                <label asp-for="Input.Name" class="block text-sm font-medium text-swamp-700 mb-1"></label>
+                <input asp-for="Input.Name" 
+                       class="w-full px-4 py-2 border border-swamp-200 rounded-lg focus:ring-2 focus:ring-swamp-400 focus:border-transparent"
+                       placeholder="Ваше имя">
+                <span asp-validation-for="Input.Name" class="text-red-600 text-sm"></span>
+            </div>
+
+            <div>
+                <label asp-for="Input.Email" class="block text-sm font-medium text-swamp-700 mb-1"></label>
+                <input asp-for="Input.Email" type="email"
+                       class="w-full px-4 py-2 border border-swamp-200 rounded-lg focus:ring-2 focus:ring-swamp-400 focus:border-transparent"
+                       placeholder="username@university.edu">
+                <span asp-validation-for="Input.Email" class="text-red-600 text-sm"></span>
+                <p class="text-xs text-swamp-500 mt-1">Только email адреса с доменом .edu</p>
+            </div>
+
+            <div>
+                <label asp-for="Input.Subject" class="block text-sm font-medium text-swamp-700 mb-1"></label>
+                <select asp-for="Input.Subject" class="w-full px-4 py-2 border border-swamp-200 rounded-lg focus:ring-2 focus:ring-swamp-400 focus:border-transparent">
+                    <option value="">Выберите тему...</option>
+                    <option value="GeneralQuestion">Общий вопрос</option>
+                    <option value="BugReport">Сообщить об ошибке</option>
+                    <option value="FeatureRequest">Предложение функции</option>
+                    <option value="Partnership">Сотрудничество</option>
+                </select>
+                <span asp-validation-for="Input.Subject" class="text-red-600 text-sm"></span>
+            </div>
+
+            <div>
+                <label asp-for="Input.Message" class="block text-sm font-medium text-swamp-700 mb-1"></label>
+                <textarea asp-for="Input.Message" rows="5"
+                          class="w-full px-4 py-2 border border-swamp-200 rounded-lg focus:ring-2 focus:ring-swamp-400 focus:border-transparent"
+                          placeholder="Введите ваше сообщение здесь..."></textarea>
+                <span asp-validation-for="Input.Message" class="text-red-600 text-sm"></span>
+            </div>
+
+            @Html.AntiForgeryToken()
+
+            <div class="text-center">
+                <button type="submit"
+                        class="bg-swamp-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-swamp-600 transition-colors flex items-center justify-center space-x-2 mx-auto shadow-lg">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                    </svg>
+                    <span>Отправить сообщение</span>
+                </button>
+            </div>
+        </form>
     </div>
 </div>
 
 @section Scripts {
-    <partial name="Shared/_ValidationScriptsPartial" />
+    <partial name="_ValidationScriptsPartial" />
 }
