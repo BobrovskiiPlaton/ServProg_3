@@ -1,18 +1,28 @@
 @page
 @{
-    ViewData["Title"] = "Greenswamp";
+    ViewData["Title"] = "Greenswamp - Campus Connection";
 }
 
-<div class="relative h-[500px] bg-swamp-800">
+<div class="relative h-[500px]">
+    <!-- Background Image with Overlay -->
+    <div class="absolute inset-0 z-0">
+        <img src="~/images/istockphoto-831860650-1024x1024.jpg" alt="Campus green space with students"
+             class="w-full h-full object-cover object-center">
+        <div class="absolute inset-0 bg-gradient-to-t from-swamp-900/80 to-swamp-900/20"></div>
+    </div>
+
+    <!-- Content -->
     <div class="relative z-10 h-full flex items-center">
-        <div class="max-w-7xl mx-auto px-4 text-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 class="text-4xl font-extrabold text-white sm:text-5xl md:text-6xl">
-                Добро пожаловать в Greenswamp
+                Прыгайте в студенческую жизнь
             </h1>
-            <p class="mt-4 text-lg text-swamp-300">Социальная сеть для студентов</p>
-            <div class="mt-5">
+            <p class="mt-4 max-w-md mx-auto text-lg text-swamp-300 sm:text-xl md:mt-6 md:max-w-2xl">
+                Общайтесь с однокурсниками через группы и чаты.
+            </p>
+            <div class="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
                 <a href="/Register">
-                    <button class="bg-swamp-500 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-swamp-600">
+                    <button class="w-full bg-swamp-500 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-swamp-100 hover:text-swamp-600 sm:w-auto">
                         Присоединиться
                     </button>
                 </a>
@@ -21,19 +31,40 @@
     </div>
 </div>
 
-<div class="max-w-7xl mx-auto py-16 px-4">
+<!-- Features Grid -->
+<div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
     <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white p-6 rounded-xl shadow-sm text-center">
-            <h3 class="text-xl font-semibold text-swamp-900">Общайтесь</h3>
-            <p class="mt-2 text-swamp-600">Находите друзей по интересам</p>
+        <!-- Feature Card 1 -->
+        <div class="bg-white p-6 rounded-xl shadow-sm">
+            <div class="w-12 h-12 bg-swamp-100 rounded-lg flex items-center justify-center">
+                <svg class="text-swamp-600 w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+                </svg>
+            </div>
+            <h3 class="mt-4 text-xl font-semibold text-swamp-900">Быстрые сообщения</h3>
+            <p class="mt-2 text-swamp-600">Делитесь короткими обновлениями, вопросами и новостями кампуса.</p>
         </div>
-        <div class="bg-white p-6 rounded-xl shadow-sm text-center">
-            <h3 class="text-xl font-semibold text-swamp-900">Делитесь</h3>
-            <p class="mt-2 text-swamp-600">Публикуйте фото и новости</p>
+
+        <!-- Feature Card 2 -->
+        <div class="bg-white p-6 rounded-xl shadow-sm">
+            <div class="w-12 h-12 bg-swamp-100 rounded-lg flex items-center justify-center">
+                <svg class="text-swamp-600 w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-1 .05 1.16.84 2 1.87 2 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+                </svg>
+            </div>
+            <h3 class="mt-4 text-xl font-semibold text-swamp-900">Группы</h3>
+            <p class="mt-2 text-swamp-600">Создавайте группы для общежитий, занятий, клубов и интересов.</p>
         </div>
-        <div class="bg-white p-6 rounded-xl shadow-sm text-center">
-            <h3 class="text-xl font-semibold text-swamp-900">Участвуйте</h3>
-            <p class="mt-2 text-swamp-600">Присоединяйтесь к мероприятиям</p>
+
+        <!-- Feature Card 3 -->
+        <div class="bg-white p-6 rounded-xl shadow-sm">
+            <div class="w-12 h-12 bg-swamp-100 rounded-lg flex items-center justify-center">
+                <svg class="text-swamp-600 w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                </svg>
+            </div>
+            <h3 class="mt-4 text-xl font-semibold text-swamp-900">Мероприятия</h3>
+            <p class="mt-2 text-swamp-600">Никогда не пропускайте мероприятия кампуса, вечеринки и учебные сессии.</p>
         </div>
     </div>
 </div>

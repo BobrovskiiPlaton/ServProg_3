@@ -1,0 +1,160 @@
+2026-04-05 12:19:25 [Information] User profile is available. Using '"C:\Users\KreKer\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-04-05 12:19:26 [Information] Now listening on: "http://localhost:5098"
+2026-04-05 12:19:26 [Information] Application started. Press Ctrl+C to shut down.
+2026-04-05 12:19:26 [Information] Hosting environment: "Development"
+2026-04-05 12:19:26 [Information] Content root path: "C:\Users\KreKer\ServProg_3\RazorLandingSite"
+2026-04-05 12:19:27 [Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5098""""/""" - null null
+2026-04-05 12:19:27 [Warning] Failed to determine the https port for redirect.
+2026-04-05 12:19:27 [Information] ["2026-04-05 12:19:27"] "GET" "/" | IP: "127.0.0.1" | UA: "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0"
+2026-04-05 12:19:27 [Information] Executing endpoint '"/Index"'
+2026-04-05 12:19:27 [Information] Route matched with "{page = \"/Index\"}". Executing page "/Index"
+2026-04-05 12:19:27 [Information] Executing an implicit handler method - ModelState is Valid
+2026-04-05 12:19:27 [Information] Executed an implicit handler method, returned result "Microsoft.AspNetCore.Mvc.RazorPages.PageResult".
+2026-04-05 12:19:27 [Information] Executed page "/Index" in 70.4525ms
+2026-04-05 12:19:27 [Information] Executed endpoint '"/Index"'
+2026-04-05 12:19:27 [Information] ["2026-04-05 12:19:27"] "GET" "/" -> Status: 200 | Duration: 105ms
+2026-04-05 12:19:27 [Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5098""""/""" - 200 null "text/html; charset=utf-8" 151.4536ms
+2026-04-05 12:19:27 [Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5098""""/css/site.css""?v=8xcGklMfRNc8XuAxrCK3bA9vEE28pKth9MNMTeoEYkg" - null null
+2026-04-05 12:19:27 [Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5098""""/js/site.js""" - null null
+2026-04-05 12:19:27 [Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5098""""/images/green-toad-logo.svg""" - null null
+2026-04-05 12:19:27 [Information] Sending file. Request path: '"/css/site.css"'. Physical path: '"C:\Users\KreKer\ServProg_3\RazorLandingSite\wwwroot\css\site.css"'
+2026-04-05 12:19:27 [Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5098""""/images/istockphoto-831860650-1024x1024.jpg""" - null null
+2026-04-05 12:19:27 [Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5098""""/images/green-toad-wink.svg""" - null null
+2026-04-05 12:19:27 [Information] Sending file. Request path: '"/images/green-toad-logo.svg"'. Physical path: '"C:\Users\KreKer\ServProg_3\RazorLandingSite\wwwroot\images\green-toad-logo.svg"'
+2026-04-05 12:19:27 [Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5098""""/css/site.css""?v=8xcGklMfRNc8XuAxrCK3bA9vEE28pKth9MNMTeoEYkg" - 200 207 "text/css" 14.6511ms
+2026-04-05 12:19:27 [Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5098""""/images/green-toad-logo.svg""" - 200 1886 "image/svg+xml" 12.9811ms
+2026-04-05 12:19:27 [Information] Sending file. Request path: '"/images/green-toad-wink.svg"'. Physical path: '"C:\Users\KreKer\ServProg_3\RazorLandingSite\wwwroot\images\green-toad-wink.svg"'
+2026-04-05 12:19:27 [Information] Sending file. Request path: '"/images/istockphoto-831860650-1024x1024.jpg"'. Physical path: '"C:\Users\KreKer\ServProg_3\RazorLandingSite\wwwroot\images\istockphoto-831860650-1024x1024.jpg"'
+2026-04-05 12:19:27 [Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5098""""/images/green-toad-wink.svg""" - 200 2550 "image/svg+xml" 21.4355ms
+2026-04-05 12:19:27 [Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5098""""/images/istockphoto-831860650-1024x1024.jpg""" - 200 61840 "image/jpeg" 23.9023ms
+2026-04-05 12:19:27 [Information] Sending file. Request path: '"/js/site.js"'. Physical path: '"C:\Users\KreKer\ServProg_3\RazorLandingSite\wwwroot\js\site.js"'
+2026-04-05 12:19:27 [Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5098""""/js/site.js""" - 200 858 "text/javascript" 39.0904ms
+2026-04-05 12:19:29 [Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5098""""/About""" - null null
+2026-04-05 12:19:29 [Information] ["2026-04-05 12:19:29"] "GET" "/About" | IP: "127.0.0.1" | UA: "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0"
+2026-04-05 12:19:29 [Information] Executing endpoint '"/About"'
+2026-04-05 12:19:29 [Information] Route matched with "{page = \"/About\"}". Executing page "/About"
+2026-04-05 12:19:29 [Information] Executing an implicit handler method - ModelState is Valid
+2026-04-05 12:19:29 [Information] Executed an implicit handler method, returned result "Microsoft.AspNetCore.Mvc.RazorPages.PageResult".
+2026-04-05 12:19:29 [Information] Executed page "/About" in 11.213ms
+2026-04-05 12:19:29 [Information] Executed endpoint '"/About"'
+2026-04-05 12:19:29 [Information] ["2026-04-05 12:19:29"] "GET" "/About" -> Status: 200 | Duration: 19ms
+2026-04-05 12:19:29 [Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5098""""/About""" - 200 null "text/html; charset=utf-8" 29.7958ms
+2026-04-05 12:19:29 [Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5098""""/js/site.js""" - null null
+2026-04-05 12:19:29 [Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5098""""/images/professor-about.png""" - null null
+2026-04-05 12:19:29 [Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5098""""/css/site.css""?v=8xcGklMfRNc8XuAxrCK3bA9vEE28pKth9MNMTeoEYkg" - null null
+2026-04-05 12:19:29 [Information] The file "/js/site.js" was not modified
+2026-04-05 12:19:29 [Information] The file "/css/site.css" was not modified
+2026-04-05 12:19:29 [Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5098""""/js/site.js""" - 304 null "text/javascript" 11.2775ms
+2026-04-05 12:19:29 [Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5098""""/css/site.css""?v=8xcGklMfRNc8XuAxrCK3bA9vEE28pKth9MNMTeoEYkg" - 304 null "text/css" 11.0116ms
+2026-04-05 12:19:29 [Information] Sending file. Request path: '"/images/professor-about.png"'. Physical path: '"C:\Users\KreKer\ServProg_3\RazorLandingSite\wwwroot\images\professor-about.png"'
+2026-04-05 12:19:29 [Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5098""""/images/professor-about.png""" - 200 1393170 "image/png" 21.1674ms
+2026-04-05 12:19:30 [Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5098""""/Contact""" - null null
+2026-04-05 12:19:30 [Information] ["2026-04-05 12:19:30"] "GET" "/Contact" | IP: "127.0.0.1" | UA: "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0"
+2026-04-05 12:19:30 [Information] Executing endpoint '"/Contact"'
+2026-04-05 12:19:30 [Information] Route matched with "{page = \"/Contact\"}". Executing page "/Contact"
+2026-04-05 12:19:30 [Information] Executing handler method "Greenswamp.Pages.ContactModel.OnGet" - ModelState is Valid
+2026-04-05 12:19:30 [Information] Executed handler method "OnGet", returned result "".
+2026-04-05 12:19:30 [Information] Executing an implicit handler method - ModelState is Valid
+2026-04-05 12:19:30 [Information] Executed an implicit handler method, returned result "Microsoft.AspNetCore.Mvc.RazorPages.PageResult".
+2026-04-05 12:19:30 [Information] Executed page "/Contact" in 49.8373ms
+2026-04-05 12:19:30 [Information] Executed endpoint '"/Contact"'
+2026-04-05 12:19:30 [Information] ["2026-04-05 12:19:30"] "GET" "/Contact" -> Status: 200 | Duration: 68ms
+2026-04-05 12:19:30 [Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5098""""/Contact""" - 200 null "text/html; charset=utf-8" 78.4762ms
+2026-04-05 12:19:30 [Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5098""""/css/site.css""?v=8xcGklMfRNc8XuAxrCK3bA9vEE28pKth9MNMTeoEYkg" - null null
+2026-04-05 12:19:30 [Information] The file "/css/site.css" was not modified
+2026-04-05 12:19:30 [Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5098""""/css/site.css""?v=8xcGklMfRNc8XuAxrCK3bA9vEE28pKth9MNMTeoEYkg" - 304 null "text/css" 4.6436ms
+2026-04-05 12:19:31 [Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5098""""/Feed""" - null null
+2026-04-05 12:19:31 [Information] ["2026-04-05 12:19:31"] "GET" "/Feed" | IP: "127.0.0.1" | UA: "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0"
+2026-04-05 12:19:31 [Information] Executing endpoint '"/Feed"'
+2026-04-05 12:19:31 [Information] Route matched with "{page = \"/Feed\"}". Executing page "/Feed"
+2026-04-05 12:19:31 [Information] Executing an implicit handler method - ModelState is Valid
+2026-04-05 12:19:31 [Information] Executed an implicit handler method, returned result "Microsoft.AspNetCore.Mvc.RazorPages.PageResult".
+2026-04-05 12:19:31 [Information] Executed page "/Feed" in 4.7417ms
+2026-04-05 12:19:31 [Information] Executed endpoint '"/Feed"'
+2026-04-05 12:19:31 [Information] ["2026-04-05 12:19:31"] "GET" "/Feed" -> Status: 200 | Duration: 11ms
+2026-04-05 12:19:31 [Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5098""""/Feed""" - 200 null "text/html; charset=utf-8" 19.847ms
+2026-04-05 12:19:31 [Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5098""""/css/site.css""?v=8xcGklMfRNc8XuAxrCK3bA9vEE28pKth9MNMTeoEYkg" - null null
+2026-04-05 12:19:31 [Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5098""""/js/site.js""" - null null
+2026-04-05 12:19:31 [Information] The file "/css/site.css" was not modified
+2026-04-05 12:19:31 [Information] The file "/js/site.js" was not modified
+2026-04-05 12:19:31 [Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5098""""/css/site.css""?v=8xcGklMfRNc8XuAxrCK3bA9vEE28pKth9MNMTeoEYkg" - 304 null "text/css" 7.1448ms
+2026-04-05 12:19:31 [Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5098""""/js/site.js""" - 304 null "text/javascript" 8.06ms
+2026-04-05 12:19:32 [Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5098""""/""" - null null
+2026-04-05 12:19:32 [Information] ["2026-04-05 12:19:32"] "GET" "/" | IP: "127.0.0.1" | UA: "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0"
+2026-04-05 12:19:32 [Information] Executing endpoint '"/Index"'
+2026-04-05 12:19:32 [Information] Route matched with "{page = \"/Index\"}". Executing page "/Index"
+2026-04-05 12:19:32 [Information] Executing an implicit handler method - ModelState is Valid
+2026-04-05 12:19:32 [Information] Executed an implicit handler method, returned result "Microsoft.AspNetCore.Mvc.RazorPages.PageResult".
+2026-04-05 12:19:32 [Information] Executed page "/Index" in 3.7897ms
+2026-04-05 12:19:32 [Information] Executed endpoint '"/Index"'
+2026-04-05 12:19:32 [Information] ["2026-04-05 12:19:32"] "GET" "/" -> Status: 200 | Duration: 10ms
+2026-04-05 12:19:32 [Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5098""""/""" - 200 null "text/html; charset=utf-8" 17.5483ms
+2026-04-05 12:19:32 [Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5098""""/css/site.css""?v=8xcGklMfRNc8XuAxrCK3bA9vEE28pKth9MNMTeoEYkg" - null null
+2026-04-05 12:19:32 [Information] The file "/css/site.css" was not modified
+2026-04-05 12:19:32 [Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5098""""/css/site.css""?v=8xcGklMfRNc8XuAxrCK3bA9vEE28pKth9MNMTeoEYkg" - 304 null "text/css" 4.5671ms
+2026-04-05 12:19:36 [Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5098""""/Privacy""" - null null
+2026-04-05 12:19:36 [Information] ["2026-04-05 12:19:36"] "GET" "/Privacy" | IP: "127.0.0.1" | UA: "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0"
+2026-04-05 12:19:36 [Information] Executing endpoint '"/Privacy"'
+2026-04-05 12:19:36 [Information] Route matched with "{page = \"/Privacy\"}". Executing page "/Privacy"
+2026-04-05 12:19:36 [Information] Executing an implicit handler method - ModelState is Valid
+2026-04-05 12:19:36 [Information] Executed an implicit handler method, returned result "Microsoft.AspNetCore.Mvc.RazorPages.PageResult".
+2026-04-05 12:19:36 [Information] Executed page "/Privacy" in 5.1044ms
+2026-04-05 12:19:36 [Information] Executed endpoint '"/Privacy"'
+2026-04-05 12:19:36 [Information] ["2026-04-05 12:19:36"] "GET" "/Privacy" -> Status: 200 | Duration: 12ms
+2026-04-05 12:19:36 [Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5098""""/Privacy""" - 200 null "text/html; charset=utf-8" 19.9378ms
+2026-04-05 12:19:36 [Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5098""""/js/site.js""" - null null
+2026-04-05 12:19:36 [Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5098""""/css/site.css""?v=8xcGklMfRNc8XuAxrCK3bA9vEE28pKth9MNMTeoEYkg" - null null
+2026-04-05 12:19:36 [Information] The file "/js/site.js" was not modified
+2026-04-05 12:19:36 [Information] The file "/css/site.css" was not modified
+2026-04-05 12:19:36 [Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5098""""/js/site.js""" - 304 null "text/javascript" 7.4994ms
+2026-04-05 12:19:36 [Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5098""""/css/site.css""?v=8xcGklMfRNc8XuAxrCK3bA9vEE28pKth9MNMTeoEYkg" - 304 null "text/css" 8.3573ms
+2026-04-05 12:19:40 [Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5098""""/Terms""" - null null
+2026-04-05 12:19:40 [Information] ["2026-04-05 12:19:40"] "GET" "/Terms" | IP: "127.0.0.1" | UA: "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0"
+2026-04-05 12:19:40 [Information] Executing endpoint '"/Terms"'
+2026-04-05 12:19:40 [Information] Route matched with "{page = \"/Terms\"}". Executing page "/Terms"
+2026-04-05 12:19:40 [Information] Executing an implicit handler method - ModelState is Valid
+2026-04-05 12:19:40 [Information] Executed an implicit handler method, returned result "Microsoft.AspNetCore.Mvc.RazorPages.PageResult".
+2026-04-05 12:19:40 [Information] Executed page "/Terms" in 4.5937ms
+2026-04-05 12:19:40 [Information] Executed endpoint '"/Terms"'
+2026-04-05 12:19:40 [Information] ["2026-04-05 12:19:40"] "GET" "/Terms" -> Status: 200 | Duration: 12ms
+2026-04-05 12:19:40 [Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5098""""/Terms""" - 200 null "text/html; charset=utf-8" 19.4325ms
+2026-04-05 12:19:40 [Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5098""""/js/site.js""" - null null
+2026-04-05 12:19:40 [Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5098""""/css/site.css""?v=8xcGklMfRNc8XuAxrCK3bA9vEE28pKth9MNMTeoEYkg" - null null
+2026-04-05 12:19:40 [Information] The file "/js/site.js" was not modified
+2026-04-05 12:19:40 [Information] The file "/css/site.css" was not modified
+2026-04-05 12:19:40 [Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5098""""/js/site.js""" - 304 null "text/javascript" 7.0674ms
+2026-04-05 12:19:40 [Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5098""""/css/site.css""?v=8xcGklMfRNc8XuAxrCK3bA9vEE28pKth9MNMTeoEYkg" - 304 null "text/css" 7.6019ms
+2026-04-05 12:19:43 [Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5098""""/Contact""" - null null
+2026-04-05 12:19:43 [Information] ["2026-04-05 12:19:43"] "GET" "/Contact" | IP: "127.0.0.1" | UA: "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0"
+2026-04-05 12:19:43 [Information] Executing endpoint '"/Contact"'
+2026-04-05 12:19:43 [Information] Route matched with "{page = \"/Contact\"}". Executing page "/Contact"
+2026-04-05 12:19:43 [Information] Executing handler method "Greenswamp.Pages.ContactModel.OnGet" - ModelState is Valid
+2026-04-05 12:19:43 [Information] Executed handler method "OnGet", returned result "".
+2026-04-05 12:19:43 [Information] Executing an implicit handler method - ModelState is Valid
+2026-04-05 12:19:43 [Information] Executed an implicit handler method, returned result "Microsoft.AspNetCore.Mvc.RazorPages.PageResult".
+2026-04-05 12:19:44 [Information] Executed page "/Contact" in 8.175ms
+2026-04-05 12:19:44 [Information] Executed endpoint '"/Contact"'
+2026-04-05 12:19:44 [Information] ["2026-04-05 12:19:43"] "GET" "/Contact" -> Status: 200 | Duration: 14ms
+2026-04-05 12:19:44 [Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5098""""/Contact""" - 200 null "text/html; charset=utf-8" 21.4294ms
+2026-04-05 12:19:44 [Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5098""""/css/site.css""?v=8xcGklMfRNc8XuAxrCK3bA9vEE28pKth9MNMTeoEYkg" - null null
+2026-04-05 12:19:44 [Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5098""""/js/site.js""" - null null
+2026-04-05 12:19:44 [Information] The file "/css/site.css" was not modified
+2026-04-05 12:19:44 [Information] The file "/js/site.js" was not modified
+2026-04-05 12:19:44 [Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5098""""/css/site.css""?v=8xcGklMfRNc8XuAxrCK3bA9vEE28pKth9MNMTeoEYkg" - 304 null "text/css" 6.9311ms
+2026-04-05 12:19:44 [Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5098""""/js/site.js""" - 304 null "text/javascript" 7.9814ms
+2026-04-05 12:19:46 [Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5098""""/About""" - null null
+2026-04-05 12:19:46 [Information] ["2026-04-05 12:19:46"] "GET" "/About" | IP: "127.0.0.1" | UA: "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:149.0"
+2026-04-05 12:19:46 [Information] Executing endpoint '"/About"'
+2026-04-05 12:19:46 [Information] Route matched with "{page = \"/About\"}". Executing page "/About"
+2026-04-05 12:19:46 [Information] Executing an implicit handler method - ModelState is Valid
+2026-04-05 12:19:46 [Information] Executed an implicit handler method, returned result "Microsoft.AspNetCore.Mvc.RazorPages.PageResult".
+2026-04-05 12:19:46 [Information] Executed page "/About" in 3.2294ms
+2026-04-05 12:19:46 [Information] Executed endpoint '"/About"'
+2026-04-05 12:19:46 [Information] ["2026-04-05 12:19:46"] "GET" "/About" -> Status: 200 | Duration: 8ms
+2026-04-05 12:19:46 [Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5098""""/About""" - 200 null "text/html; charset=utf-8" 16.5524ms
+2026-04-05 12:19:46 [Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5098""""/js/site.js""" - null null
+2026-04-05 12:19:46 [Information] Request starting "HTTP/1.1" "GET" "http"://"localhost:5098""""/css/site.css""?v=8xcGklMfRNc8XuAxrCK3bA9vEE28pKth9MNMTeoEYkg" - null null
+2026-04-05 12:19:46 [Information] The file "/js/site.js" was not modified
+2026-04-05 12:19:46 [Information] The file "/css/site.css" was not modified
+2026-04-05 12:19:46 [Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5098""""/js/site.js""" - 304 null "text/javascript" 7.6081ms
+2026-04-05 12:19:46 [Information] Request finished "HTTP/1.1" "GET" "http"://"localhost:5098""""/css/site.css""?v=8xcGklMfRNc8XuAxrCK3bA9vEE28pKth9MNMTeoEYkg" - 304 null "text/css" 8.4608ms

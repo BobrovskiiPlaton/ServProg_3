@@ -52,3 +52,4 @@
 2026-04-05 12:09:39.460 +03:00 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\KreKer\ServProg_3\RazorLandingSite\wwwroot\favicon.ico'
 2026-04-05 12:09:39.461 +03:00 [INF] Outgoing response: GET /favicon.ico | StatusCode: 200 | Duration: 12ms
 2026-04-05 12:09:39.464 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5098/favicon.ico - 200 5430 image/x-icon 17.6488ms
+2026-04-05 12:13:09.964 +03:00 [INF] Application is shutting down...

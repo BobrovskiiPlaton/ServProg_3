@@ -1,8 +1,8 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\KreKer\\ServProg_3\\RazorLandingSite\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\RazorLandingSite.bundle.scp.css",
-      "PackagePath": "staticwebassets\\RazorLandingSite.bundle.scp.css"
+      "Id": "C:\\Users\\KreKer\\ServProg_3\\RazorLandingSite\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Greenswamp.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Greenswamp.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\KreKer\\ServProg_3\\RazorLandingSite\\wwwroot\\css\\site.css",
@@ -11,6 +11,42 @@
     {
       "Id": "C:\\Users\\KreKer\\ServProg_3\\RazorLandingSite\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\KreKer\\ServProg_3\\RazorLandingSite\\wwwroot\\images\\4x3_Photo_of_a_messy_desk_with_table.png",
+      "PackagePath": "staticwebassets\\images\\4x3_Photo_of_a_messy_desk_with_table.png"
+    },
+    {
+      "Id": "C:\\Users\\KreKer\\ServProg_3\\RazorLandingSite\\wwwroot\\images\\Standard_Mode_a_looed_gif_of_a_pixel_frog_flyi.mp4",
+      "PackagePath": "staticwebassets\\images\\Standard_Mode_a_looed_gif_of_a_pixel_frog_flyi.mp4"
+    },
+    {
+      "Id": "C:\\Users\\KreKer\\ServProg_3\\RazorLandingSite\\wwwroot\\images\\green-toad-logo.svg",
+      "PackagePath": "staticwebassets\\images\\green-toad-logo.svg"
+    },
+    {
+      "Id": "C:\\Users\\KreKer\\ServProg_3\\RazorLandingSite\\wwwroot\\images\\green-toad-sad.svg",
+      "PackagePath": "staticwebassets\\images\\green-toad-sad.svg"
+    },
+    {
+      "Id": "C:\\Users\\KreKer\\ServProg_3\\RazorLandingSite\\wwwroot\\images\\green-toad-wink.svg",
+      "PackagePath": "staticwebassets\\images\\green-toad-wink.svg"
+    },
+    {
+      "Id": "C:\\Users\\KreKer\\ServProg_3\\RazorLandingSite\\wwwroot\\images\\istockphoto-1464399789-1024x1024.jpg",
+      "PackagePath": "staticwebassets\\images\\istockphoto-1464399789-1024x1024.jpg"
+    },
+    {
+      "Id": "C:\\Users\\KreKer\\ServProg_3\\RazorLandingSite\\wwwroot\\images\\istockphoto-831860650-1024x1024.jpg",
+      "PackagePath": "staticwebassets\\images\\istockphoto-831860650-1024x1024.jpg"
+    },
+    {
+      "Id": "C:\\Users\\KreKer\\ServProg_3\\RazorLandingSite\\wwwroot\\images\\professor-about.png",
+      "PackagePath": "staticwebassets\\images\\professor-about.png"
+    },
+    {
+      "Id": "C:\\Users\\KreKer\\ServProg_3\\RazorLandingSite\\wwwroot\\images\\shrek.jpg",
+      "PackagePath": "staticwebassets\\images\\shrek.jpg"
     },
     {
       "Id": "C:\\Users\\KreKer\\ServProg_3\\RazorLandingSite\\wwwroot\\js\\site.js",
@@ -245,20 +281,20 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.RazorLandingSite.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Greenswamp.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.RazorLandingSite.props",
-      "PackagePath": "build\\RazorLandingSite.props"
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Greenswamp.props",
+      "PackagePath": "build\\Greenswamp.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.RazorLandingSite.props",
-      "PackagePath": "buildMultiTargeting\\RazorLandingSite.props"
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Greenswamp.props",
+      "PackagePath": "buildMultiTargeting\\Greenswamp.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.RazorLandingSite.props",
-      "PackagePath": "buildTransitive\\RazorLandingSite.props"
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Greenswamp.props",
+      "PackagePath": "buildTransitive\\Greenswamp.props"
     }
   ],
   "ElementsToRemove": []

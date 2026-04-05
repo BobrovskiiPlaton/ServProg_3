@@ -1,0 +1,30 @@
+@page
+@model ErrorModel
+@{
+    ViewData["Title"] = "Страница не найдена - Greenswamp";
+    var statusCode = RouteData.Values["code"]?.ToString() ?? "404";
+}
+
+<div class="bg-swamp-900 relative min-h-[600px]">
+    <!-- Background Image with Overlay -->
+    <div class="absolute inset-0 z-0">
+        <img src="~/images/shrek.jpg" alt="Lonely toilet" class="w-full h-full object-cover object-center">
+    </div>
+
+    <!-- Content -->
+    <div class="relative z-10 h-full min-h-[600px] flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl font-extrabold text-white sm:text-5xl md:text-6xl">
+                @statusCode - Страница не найдена
+            </h1>
+            <p class="mt-4 max-w-md mx-auto text-lg text-swamp-300 sm:text-xl md:mt-6 md:max-w-2xl">
+                Что вы делаете в моем болоте!?
+            </p>
+            <div class="mt-8">
+                <a href="/" class="bg-swamp-500 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-swamp-600 transition-colors inline-block">
+                    Вернуться на главную
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

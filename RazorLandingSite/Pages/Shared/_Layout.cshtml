@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewData["Title"] - Greenswamp</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <script>
         tailwind.config = {
             theme: {
@@ -32,11 +33,13 @@
             transition: all 0.3s ease-out;
             transform-origin: top;
         }
+
         #mobile-menu.hidden {
             opacity: 0;
             transform: scaleY(0);
             display: none;
         }
+
         #mobile-menu.block {
             opacity: 1;
             transform: scaleY(1);
@@ -45,40 +48,55 @@
     </style>
 </head>
 <body class="bg-swamp-50">
+    <!-- Navigation -->
     <nav class="bg-white shadow-lg sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4">
             <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
                 <a href="/" class="flex items-center space-x-2">
+                    <img src="~/images/green-toad-logo.svg" alt="Greenswamp Logo" class="h-8 w-8">
                     <span class="text-2xl font-bold text-swamp-600">Greenswamp</span>
                 </a>
+
+                <!-- Desktop Menu -->
                 <div class="hidden md:flex space-x-8">
                     <a href="/" class="my-auto text-swamp-600 hover:text-swamp-800 font-medium">Главная</a>
                     <a href="/Feed" class="my-auto text-swamp-600 hover:text-swamp-800 font-medium">Лента</a>
                     <a href="/About" class="my-auto text-swamp-600 hover:text-swamp-800 font-medium">О нас</a>
                     <a href="/Contact" class="my-auto text-swamp-600 hover:text-swamp-800 font-medium">Контакты</a>
-                    <a href="/Login"><button class="bg-swamp-500 text-white px-6 py-2 rounded-full hover:bg-swamp-600">Войти</button></a>
+                    <a href="/Login">
+                        <button class="bg-swamp-500 text-white px-6 py-2 rounded-full hover:bg-swamp-600">Войти</button>
+                    </a>
                 </div>
-                <button id="mobile-menu-button" class="md:hidden text-swamp-600">
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden text-swamp-600 hover:text-swamp-800">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                     </svg>
                 </button>
             </div>
         </div>
+
+        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden absolute w-full bg-white shadow-lg">
             <div class="px-4 py-2 space-y-4">
-                <a href="/" class="block text-swamp-600">Главная</a>
-                <a href="/Feed" class="block text-swamp-600">Лента</a>
-                <a href="/About" class="block text-swamp-600">О нас</a>
-                <a href="/Contact" class="block text-swamp-600">Контакты</a>
-                <a href="/Login"><button class="w-full bg-swamp-500 text-white px-6 py-2 rounded-full">Войти</button></a>
+                <a href="/" class="block text-swamp-600 hover:text-swamp-800 font-medium">Главная</a>
+                <a href="/Feed" class="block text-swamp-600 hover:text-swamp-800 font-medium">Лента</a>
+                <a href="/About" class="block text-swamp-600 hover:text-swamp-800 font-medium">О нас</a>
+                <a href="/Contact" class="block text-swamp-600 hover:text-swamp-800 font-medium">Контакты</a>
+                <a href="/Login">
+                    <button class="w-full bg-swamp-500 text-white px-6 py-2 rounded-full hover:bg-swamp-600">Войти</button>
+                </a>
             </div>
         </div>
     </nav>
 
     <script>
+        // Mobile Menu Toggle
         const mobileMenuButton = document.getElementById('mobile-menu-button');
         const mobileMenu = document.getElementById('mobile-menu');
+
         if (mobileMenuButton && mobileMenu) {
             mobileMenuButton.addEventListener('click', () => {
                 const isHidden = mobileMenu.classList.contains('hidden');
@@ -90,6 +108,8 @@
                     mobileMenu.classList.remove('block');
                 }
             });
+
+            // Close menu when clicking outside
             document.addEventListener('click', (event) => {
                 if(!mobileMenu.contains(event.target) && !mobileMenuButton.contains(event.target)) {
                     mobileMenu.classList.add('hidden');
@@ -103,12 +123,18 @@
         @RenderBody()
     </main>
 
+    <!-- Footer -->
     <footer class="bg-swamp-900 text-white">
-        <div class="max-w-7xl mx-auto py-12 px-4">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
-                    <span class="text-xl font-bold">Greenswamp</span>
-                    <p class="mt-4 text-sm text-swamp-300">Соединяем людей одно кваканье за раз.</p>
+                    <div class="flex items-center space-x-2">
+                        <img src="~/images/green-toad-logo.svg" alt="Greenswamp Logo" class="h-8 w-8">
+                        <span class="text-xl font-bold">Greenswamp</span>
+                    </div>
+                    <p class="mt-4 text-sm text-swamp-300">
+                        Соединяем людей одно кваканье за раз.
+                    </p>
                 </div>
                 <div class="grid grid-cols-2 gap-8">
                     <div>
@@ -128,77 +154,38 @@
                 </div>
                 <div>
                     <h4 class="text-sm font-semibold">Будьте в курсе</h4>
-                    <form id="subscribeForm" class="mt-4 flex" method="post" asp-page="/Index" asp-page-handler="Subscribe">
-                        @Html.AntiForgeryToken()
-                        <input type="email" id="subscribeEmail" name="email" placeholder="Ваш email" 
-                               class="px-4 py-2 rounded-l-full flex-1 text-swamp-900"
-                               required pattern="^[a-zA-Z0-9._%+-]+@@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
-                        <button type="submit" class="bg-swamp-500 px-6 py-2 rounded-r-full hover:bg-swamp-600">Подписаться</button>
+                    <form class="mt-4 flex" id="subscribeForm" onsubmit="handleSubscribe(event)">
+                        <input type="email" id="subscribeEmail" placeholder="Введите ваш email"
+                               class="px-4 py-2 rounded-l-full flex-1 text-swamp-900 border border-swamp-200 focus:ring-2 focus:ring-swamp-400">
+                        <button type="submit" class="bg-swamp-500 px-6 py-2 rounded-r-full hover:bg-swamp-600">
+                            Подписаться
+                        </button>
                     </form>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Subscribe Success Modal -->
-    <div id="subscribeModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-[100]">
+    <!-- Subscribe Popup -->
+    <div id="subscribePopup" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-[100]">
         <div class="bg-white rounded-xl max-w-md w-full p-6 relative shadow-lg">
             <div class="text-center">
                 <div class="mx-auto w-24 h-24 bg-swamp-100 rounded-full flex items-center justify-center mb-4">
-                    <span class="text-4xl">📧</span>
+                    <img src="~/images/green-toad-wink.svg" alt="The toad approves" class="w-16 h-16">
                 </div>
-                <h3 class="text-xl font-bold text-swamp-900 mb-2">Спасибо за подписку!</h3>
+                <h3 class="text-xl font-bold text-swamp-900 mb-2">Вы в пруду!</h3>
                 <p class="text-swamp-700">
-                    Теперь вы будете получать самые свежие новости из нашего пруда.
+                    Спасибо за подписку! Проверьте ваш почтовый ящик.
                 </p>
-                <button onclick="closeSubscribeModal()"
+                <button onclick="closeSubscribePopup()"
                         class="mt-6 bg-swamp-500 text-white px-6 py-2 rounded-full hover:bg-swamp-600 transition-colors">
-                    Отлично! 🐸
+                    Отлично!
                 </button>
             </div>
         </div>
     </div>
 
-    <script>
-        // Обработка AJAX отправки формы подписки
-        document.getElementById('subscribeForm')?.addEventListener('submit', async (e) => {
-            e.preventDefault();
-            const formData = new FormData(e.target);
-            const email = formData.get('email');
-            
-            if (!email) return;
-            
-            // Получаем токен антифорджери
-            const token = document.querySelector('input[name="__RequestVerificationToken"]')?.value;
-            
-            try {
-                const response = await fetch('/Index?handler=Subscribe', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/x-www-form-urlencoded',
-                        'RequestVerificationToken': token
-                    },
-                    body: new URLSearchParams({ email: email })
-                });
-                
-                if (response.ok) {
-                    document.getElementById('subscribeModal').classList.remove('hidden');
-                    document.getElementById('subscribeEmail').value = '';
-                } else {
-                    const errorText = await response.text();
-                    alert('Произошла ошибка: ' + errorText);
-                }
-            } catch (error) {
-                console.error('Error:', error);
-                alert('Произошла ошибка. Пожалуйста, попробуйте позже.');
-            }
-        });
-
-        function closeSubscribeModal() {
-            document.getElementById('subscribeModal').classList.add('hidden');
-        }
-    </script>
-    
+    <script src="~/js/site.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

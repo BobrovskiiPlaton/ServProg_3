@@ -1,43 +1,27 @@
+using Greenswamp.Middleware;
+using Greenswamp.Services;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Настройка Serilog для логирования
 Log.Logger = new LoggerConfiguration()
-    .MinimumLevel.Information()
-    .WriteTo.Console()
-    .WriteTo.File("logs/log-.txt", 
+    .WriteTo.File("logs/requests.log", 
         rollingInterval: RollingInterval.Day,
-        retainedFileCountLimit: 31,
-        outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} [{Level:u3}] {Message:lj}{NewLine}{Exception}")
+        outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm:ss} [{Level}] {Message}{NewLine}{Exception}")
+    .WriteTo.Console()
     .CreateLogger();
 
 builder.Host.UseSerilog();
 
+// Добавление сервисов
 builder.Services.AddRazorPages();
+builder.Services.AddScoped<LoggingService>();
+builder.Services.AddHttpContextAccessor();
 
 var app = builder.Build();
 
-app.Use(async (context, next) =>
-{
-    var stopwatch = System.Diagnostics.Stopwatch.StartNew();
-    
-    Log.Information("Incoming request: {Method} {Path} | IP: {RemoteIpAddress} | UserAgent: {UserAgent}",
-        context.Request.Method,
-        context.Request.Path,
-        context.Connection.RemoteIpAddress,
-        context.Request.Headers["User-Agent"].ToString());
-    
-    await next();
-    
-    stopwatch.Stop();
-    
-    Log.Information("Outgoing response: {Method} {Path} | StatusCode: {StatusCode} | Duration: {Duration}ms",
-        context.Request.Method,
-        context.Request.Path,
-        context.Response.StatusCode,
-        stopwatch.ElapsedMilliseconds);
-});
-
+// Настройка конвейера обработки запросов
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error");
@@ -47,8 +31,15 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
+
+// Добавляем middleware для логирования запросов
+app.UseMiddleware<RequestLoggingMiddleware>();
+
 app.UseAuthorization();
+
 app.MapRazorPages();
+
+// Настройка обработки ошибки 404
 app.UseStatusCodePagesWithReExecute("/Error/{0}");
 
 app.Run();
